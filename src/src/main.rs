@@ -18,7 +18,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let mut image_data = Vec::new();
     image_file.read_to_end(&mut image_data)?;
 
-    // Make the POST request
+    // Make the POST requestw
     let response = client.post(url)
         .headers(headers)
         .body(image_data)
